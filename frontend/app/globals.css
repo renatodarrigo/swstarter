@@ -1,0 +1,63 @@
+.theme-light {
+  --background: #ededed;
+  --foreground: #383838;
+  --container-background: #ffffff;
+  --container-foreground: #000000;
+  --shadow: #dadada;
+  --highlight: #0ab463;
+  --highlight-hover: #089954;
+  --link: #0094ff;
+  --border: #c4c4c4;
+  --disabled: #c4c4c4;
+  --shadow-alpha: 0.75;
+  /* --font-montserrat defined in layout.tsx */
+}
+
+.theme-dark {
+  --background: #111111;
+  --foreground: #dddddd;
+  --container-background: #000000;
+  --container-foreground: #ffffff;
+  --shadow: #131313;
+  --highlight: #860000;
+  --highlight-hover: #5c0000;
+  --link: #af0000;
+  --border: #c4c4c4;
+  --disabled: #c4c4c4;
+  --shadow-alpha: 0.75;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: block;  
+  width: 100%;
+  margin: 10px auto 0;
+  padding: 0 10px;
+}
+
+@media (min-width: 500px) {
+  main {
+    width: 498px;
+    margin: 10px auto 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  main {
+    width: 1022px;
+    margin: 30px auto 0;
+  }
+}

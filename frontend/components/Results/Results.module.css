@@ -1,0 +1,40 @@
+.results {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow: auto;
+}
+
+.results h2 {
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--container-foreground);
+  padding: 0 0 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+.resultlist {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.resultlist:has(.empty) {
+  justify-content: center;
+  align-items: center;
+}
+
+.empty {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.empty p {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--border);
+  text-align: center;
+}

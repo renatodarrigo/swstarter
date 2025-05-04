@@ -1,0 +1,23 @@
+.moviespage {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav {
+  width: 187px;
+  margin-top: 30px;
+}
+
+@media (min-width: 1024px) {
+  .moviespage {
+    display: block;
+    width: 804px;
+    margin: 0 auto;
+  }
+  
+  .nav {
+    width: 187px;
+    margin-top: 30px;
+  }
+}

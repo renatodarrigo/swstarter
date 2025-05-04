@@ -1,0 +1,17 @@
+.inputform {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-grow: 0;
+  flex-basis: content;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.radiogroup {
+  display: flex;
+  gap: 30px;
+}

@@ -1,0 +1,35 @@
+.radio {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--container-foreground);
+}
+
+.radio input {
+  display: grid;
+  place-content: center;
+  appearance: none;
+  background-color: var(--container-background);
+  margin: 0;
+  font: inherit;
+  color: var(--container-foreground);
+  width: 1.2em;
+  height: 1.2em;
+  border: 0.2em solid var(--container-foreground);
+  border-radius: 50%;
+}
+
+.radio input:checked::before {
+  transform: scale(1) translate(-1em, -1em);;
+}
+
+.radio input::before {
+  content: "";
+  width: 0.6em;
+  height: 0.6em;
+  border-radius: 50%;
+  transform: scale(0) translate(-1em, -1em);
+  box-shadow: 1em 1em var(--link);
+}

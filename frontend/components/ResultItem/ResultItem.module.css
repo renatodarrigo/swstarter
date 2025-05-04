@@ -1,0 +1,31 @@
+.resultitem {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+  align-items: center;
+}
+
+.resultitem p {
+  display: block;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--container-foreground);
+  align-content: center;
+}
+
+@media (min-width: 1024px) {
+  .resultitem {
+    display: flex;
+    padding: 10px 0;
+    border-bottom: 1px solid var(--border);
+  }
+  
+  .resultitem p {
+    flex: 0 0 380px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--container-foreground);
+    align-content: center;
+  }
+}

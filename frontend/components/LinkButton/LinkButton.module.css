@@ -1,0 +1,41 @@
+.linkbutton {
+  display: block;
+  width: 100%;
+  height: 30px;
+  padding: 6px;
+  border-radius: 20px;
+  border: 1px solid var(--highlight);
+  background-color: var(--highlight);
+  text-decoration: none;
+}
+
+.linkbutton:hover {
+  cursor: pointer;
+  border: 1px solid var(--highlight-hover);
+  background-color: var(--highlight-hover);
+}
+
+.linkbutton.disabled {
+  background-color: var(--disabled);
+  border: 1px solid var(--disabled);
+  pointer-events: none;
+}
+
+.linkbutton span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--container-background);
+  text-transform: uppercase;
+}
+
+@media (min-width: 1024px) {
+  .linkbutton {
+    height: 34px;
+    padding: 8px;
+  }
+  .linkbutton span {
+    font-size: 14px;
+  }
+}

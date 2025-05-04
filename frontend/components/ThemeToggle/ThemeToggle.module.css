@@ -1,0 +1,15 @@
+.themetoggle {
+  display: grid;
+  align-self: end;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid var(--border);
+  background-color: var(--background);
+}
+
+.theme-dark {
+  background-color: var(--foreground);
+}
